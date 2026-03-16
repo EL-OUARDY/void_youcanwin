@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 function CTA() {
   return (
-    <Container className="cta relative py-18 text-center text-white">
+    <Container className="cta relative py-16 text-center text-white">
       {/* Gradient background */}
       <div className="from-destructive to-destructive-strong absolute inset-0 -z-100 size-full bg-linear-to-r" />
 
@@ -18,7 +18,7 @@ function CTA() {
       </p>
 
       {/* Controls */}
-      <div className="mt-12 flex flex-wrap justify-center gap-2 md:gap-4">
+      <div className="mt-8 flex flex-wrap justify-center gap-2 md:gap-4">
         <a
           href="#"
           className={clsx(
