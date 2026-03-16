@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# YouCanWin @VOID
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance landing page. [View Live Site](https://void-youcanwin.vercel.app/)
 
-Currently, two official plugins are available:
+![Main Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Performance](#performance)
+- [Installation](#installation)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React 18, TypeScript, Vite
+- **Animations:** GSAP & Lenis (Smooth Scroll)
+- **Styling:** Tailwind CSS (version 4)
+- **Fonts & Icons:** Poppins, Lucide Icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Responsive and optimized for all screen sizes.
+- The entire codebase is written in TypeScript for enhanced type safety and maintainability.
+- Built with a strong emphasis on Core Web Vitals and accessible design principles.
+- Performance Oriented: High Lighthouse scores.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Performance
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Measured with Google Lighthouse:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **No Layout Shift:** Optimized CLS (Cumulative Layout Shift) for a stable visual experience.
+- **Fast Loading:** Minimal LCP (Largest Contentful Paint) and FCP (First Contentful Paint) times.
+
+![Lighthouse Score](lighthouse.png)
+
+## Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/EL-OUARDY/void_youcanwin.git
+   cd void_youcanwin
+   ```
+
+2. **Install deps**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run dev**
+   ```bash
+   npm run dev
+   ```
+
+## Owner
+
+[Wadi3](https://wadi3.codes/) — Full Stack Developer
