@@ -15,6 +15,7 @@
   --muted-foreground: #64748b;
   --white: #ffffff;
   --destructive: #dc2626;
+  --destructive-strong: #b01219;
 }
 
 @theme inline {
@@ -28,6 +29,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-white: var(--white);
   --color-destructive: var(--destructive);
+  --color-destructive-strong: var(--destructive-strong);
 
   /* Fonts */
   --font-poppins: 'poppins', sans-serif;

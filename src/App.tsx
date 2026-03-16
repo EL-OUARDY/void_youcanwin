@@ -3,6 +3,7 @@ import Header from './components/Header';
 import BackOffice from './components/sections/BackOffice';
 import Benefits from './components/sections/Benefits';
 import Catalog from './components/sections/Catalog';
+import CTA from './components/sections/CTA';
 import Features from './components/sections/Features';
 import Hero from './components/sections/Hero';
 import HowItWorks from './components/sections/HowItWorks';
@@ -26,6 +27,7 @@ function App() {
           <Catalog />
         </div>
         <SocialProof />
+        <CTA />
 
         <div className="h-dvh"></div>
       </main>

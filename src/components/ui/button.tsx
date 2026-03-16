@@ -11,6 +11,9 @@ export const buttonVariants = cva(
           'bg-linear-to-r from-primary to-primary-strong text-white hover:from-30% hover:to-90%',
         outline: 'border-muted text-foreground hover:bg-muted/30 border',
         danger: 'bg-destructive text-white hover:bg-destructive/85',
+        white: 'bg-white text-foreground hover:bg-white/90',
+        ghost:
+          'bg-transparant border border-muted/50 text-white hover:bg-muted/20',
       },
     },
     defaultVariants: {
