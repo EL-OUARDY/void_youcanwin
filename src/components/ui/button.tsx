@@ -3,7 +3,7 @@ import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react';
 import { cn } from '../../lib/utils';
 
 export const buttonVariants = cva(
-  'cursor-pointer rounded-xl corner-squircle justify-center px-5 py-1 text-center capitalize transition-colors duration-300 select-none',
+  'cursor-pointer rounded-xl corner-squircle justify-center px-5 py-2 text-center capitalize transition-colors duration-300 select-none',
   {
     variants: {
       variant: {

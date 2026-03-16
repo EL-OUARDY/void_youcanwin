@@ -1,8 +1,8 @@
 import { ChevronRightIcon, LightbulbIcon } from 'lucide-react';
-import AppMockup from './AppMockup';
-import { Container } from './Container';
-import { buttonVariants } from './ui/button';
+import AppMockup from '../AppMockup';
+import { buttonVariants } from '../ui/button';
 import clsx from 'clsx';
+import { Container } from '../shared/Container';
 
 function Hero() {
   return (

@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { XIcon } from 'lucide-react';
 import { useEffect, useState, type ReactNode } from 'react';
-import Logo from '../Logo';
 import { cn } from '../../lib/utils';
+import Logo from '../shared/Logo';
 
 interface Props {
   open: boolean;

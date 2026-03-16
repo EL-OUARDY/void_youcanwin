@@ -1,6 +1,6 @@
 import { TrophyIcon } from 'lucide-react';
-import { APP_NAME } from '../lib/constants';
-import Chip from './ui/chip';
+import { APP_NAME } from '../../lib/constants';
+import Chip from '../ui/chip';
 
 function Logo() {
   return (

@@ -3,11 +3,11 @@ import clsx from 'clsx';
 import { ChevronRightIcon, MenuIcon } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { Container } from './Container';
-import Logo from './Logo';
 import NavLink from './ui/navlink';
 import Drawer from './ui/drawer';
 import { buttonVariants } from './ui/button';
+import { Container } from './shared/Container';
+import Logo from './shared/Logo';
 
 gsap.registerPlugin(useGSAP);
 
@@ -95,7 +95,7 @@ function Header() {
             <a
               href="#"
               className={clsx(
-                'group/link flex items-center gap-1',
+                'group/link flex items-center gap-1 py-1!',
                 buttonVariants({ variant: 'default' }),
               )}
             >

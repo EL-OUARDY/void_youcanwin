@@ -1,5 +1,5 @@
 import { type ElementType, type ReactNode, forwardRef } from 'react';
-import { cn } from '../lib/utils';
+import { cn } from '../../lib/utils';
 
 interface Props {
   as?: ElementType;

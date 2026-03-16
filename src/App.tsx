@@ -1,6 +1,7 @@
 import SmoothScroll from './components/animations/SmoothScroll';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import Features from './components/sections/Features';
+import Hero from './components/sections/Hero';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Features />
 
         <div className="h-dvh bg-purple-300"></div>
         <div className="h-dvh bg-orange-300"></div>
