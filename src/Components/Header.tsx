@@ -76,10 +76,10 @@ function Header() {
     <header
       ref={headerRef}
       data-scroll={isScroll}
-      className="page-header group border-muted fixed z-1000 w-full border-b data-[scroll=true]:border-none data-[scroll=true]:bg-white data-[scroll=true]:shadow-[0_4px_30px_#00000013]"
+      className="page-header bg-background group border-muted fixed z-1000 w-full border-b data-[scroll=true]:border-none data-[scroll=true]:bg-white data-[scroll=true]:shadow-[0_4px_30px_#00000013]"
     >
       <Container className="overflow-visible">
-        <div className="flex h-[60px] items-center">
+        <div className="flex h-15 items-center">
           <Logo />
 
           <div className="ml-auto hidden h-full items-center gap-8 lg:flex">
