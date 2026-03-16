@@ -1,44 +1,30 @@
-import { type ReactNode, useRef } from 'react';
+import ReactLenis, { type LenisRef } from 'lenis/react';
+import { type ReactNode, useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
-
-gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
 interface Props {
   children: ReactNode;
 }
 
-function SmoothScroll({ children }: Props) {
-  const smoother = useRef<ScrollSmoother | null>(null);
+function LenisScrollProvider({ children }: Props) {
+  const lenisRef = useRef<LenisRef | null>(null);
 
-  useGSAP(
-    () => {
-      smoother.current = ScrollSmoother.create({
-        smooth: 1,
-        smoothTouch: 0.1,
-        effects: true,
-        normalizeScroll: true,
-      });
+  // GSAP integration
+  useEffect(() => {
+    function update(time: number) {
+      lenisRef.current?.lenis?.raf(time * 1000);
+    }
 
-      history.scrollRestoration = 'manual';
-      smoother.current.scrollTo(0, false);
+    gsap.ticker.add(update);
 
-      return () => {
-        if (smoother.current) {
-          smoother.current.kill();
-        }
-      };
-    },
-    { dependencies: [], revertOnUpdate: true },
-  );
+    return () => gsap.ticker.remove(update);
+  }, []);
 
   return (
-    <div id="smooth-wrapper">
-      <div id="smooth-content">{children}</div>
-    </div>
+    <ReactLenis root ref={lenisRef}>
+      {children}
+    </ReactLenis>
   );
 }
 
-export default SmoothScroll;
+export default LenisScrollProvider;
