@@ -8,7 +8,7 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-gradient-to-r from-primary to-primary-strong  text-white hover:from-30% hover:to-90%',
+          'bg-linear-to-r from-primary to-primary-strong text-white hover:from-30% hover:to-90%',
         outline: 'border-muted text-foreground hover:bg-muted/30 border',
       },
     },
