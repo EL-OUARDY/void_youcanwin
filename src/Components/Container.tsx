@@ -15,7 +15,7 @@ export const Container = forwardRef<HTMLElement, Props>(
         className={cn('overflow-hidden px-6', className)}
         {...rest}
       >
-        <div className="mx-auto w-full max-w-270">{children}</div>
+        <div className="mx-auto w-full max-w-6xl">{children}</div>
       </Comp>
     );
   },
