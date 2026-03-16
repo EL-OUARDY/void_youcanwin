@@ -1,5 +1,6 @@
 import SmoothScroll from './components/animations/SmoothScroll';
 import Header from './components/Header';
+import Benefits from './components/sections/Benefits';
 import Features from './components/sections/Features';
 import Hero from './components/sections/Hero';
 import HowItWorks from './components/sections/HowItWorks';
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Features />
         <HowItWorks />
+        <Benefits />
 
         <div className="h-dvh bg-purple-300"></div>
         <div className="h-dvh bg-orange-300"></div>
