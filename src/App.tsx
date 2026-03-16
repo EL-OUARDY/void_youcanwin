@@ -5,6 +5,7 @@ import Benefits from './components/sections/Benefits';
 import Features from './components/sections/Features';
 import Hero from './components/sections/Hero';
 import HowItWorks from './components/sections/HowItWorks';
+import Stats from './components/sections/Stats';
 
 function App() {
   return (
@@ -16,11 +17,9 @@ function App() {
         <HowItWorks />
         <Benefits />
         <BackOffice />
+        <Stats />
 
-        <div className="h-dvh bg-purple-300"></div>
-        <div className="h-dvh bg-orange-300"></div>
-        <div className="h-dvh bg-green-300"></div>
-        <div className="h-dvh bg-red-300"></div>
+        <div className="h-dvh"></div>
       </main>
     </SmoothScroll>
   );
