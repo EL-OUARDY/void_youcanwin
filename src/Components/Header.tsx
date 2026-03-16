@@ -106,7 +106,7 @@ function Header() {
 
           {/* Mobile menu trigger */}
           <button
-            className="ml-auto cursor-pointer lg:hidden"
+            className="hover:bg-muted/50 ml-auto cursor-pointer p-2 transition-colors duration-300 lg:hidden"
             aria-label="Open menu"
             onClick={() => setIsDrawerOpen(true)}
           >

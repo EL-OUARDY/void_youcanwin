@@ -67,7 +67,7 @@ function Drawer({
             <Logo />
           </div>
           <button
-            className="hover:bg-foreground/10 cursor-pointer p-2 transition-colors duration-300"
+            className="hover:bg-muted/50 cursor-pointer p-2 transition-colors duration-300"
             onClick={() => {
               setIsDrawerOpen(false);
               onClose();
