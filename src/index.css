@@ -1,11 +1,58 @@
 @import 'tailwindcss';
+@plugin '@toolwind/corner-shape';
 @import '@fontsource/poppins/400.css';
 @import '@fontsource/poppins/700.css';
 
-@theme {
+:root {
+  --foreground: #000000;
+  --background: #ffffff;
+  --primary: #16a34a;
+  --primary-strong: #0b6b3a;
+  --primary-hover: #0b6b3a;
+  --muted: #cbd5e1;
+  --white: #ffffff;
+  --destructive: #dc2626;
+}
+
+@theme inline {
+  /* Colors */
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-hover: var(--primary-hover);
+  --color-muted: var(--muted);
+  --color-white: var(--white);
+  --color-destructive: var(--destructive);
+
+  /* Fonts */
   --font-poppins: 'poppins', sans-serif;
+
+  /* Animation utilities */
+  --animate-draw: draw 1s linear alternate forwards;
+  --animate-appear: fade-in 0.5s ease-out 0.5s forwards;
+
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 0 400;
+    }
+
+    to {
+      stroke-dasharray: 400 0;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 body {
-  @apply font-poppins;
+  @apply text-foreground bg-background font-poppins;
 }
