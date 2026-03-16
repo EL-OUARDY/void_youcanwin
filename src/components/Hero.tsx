@@ -9,15 +9,21 @@ function Hero() {
     <Container className="hero relative">
       <div className="h-dvh min-h-200 pt-15 md:min-h-180 lg:min-h-168">
         {/* Gradient background */}
-        <div className="absolute inset-0 -z-100 size-full" />
+        <div
+          className="absolute inset-0 -z-100 size-full"
+          style={{
+            background:
+              'linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 50%, #FEF2F2 100%)',
+          }}
+        />
 
         {/* Content */}
-        <div className="flex size-full items-center gap-8">
+        <div className="flex size-full items-center gap-4">
           {/* Text */}
           <div className="flex-3">
             <div className="flex max-w-lg flex-col gap-6">
               {/* Heading */}
-              <h1 className="text-[clamp(2.1rem,6vw,3.7rem)] leading-tight font-bold sm:leading-none">
+              <h1 className="text-[clamp(2.1rem,4.5vw,3.4rem)] leading-tight font-bold sm:leading-none md:pr-16">
                 Transformez chaque{' '}
                 <span className="from-primary to-primary-strong relative bg-linear-to-r bg-clip-text text-transparent">
                   produit
@@ -65,17 +71,17 @@ function Hero() {
               <div className="numbers flex max-w-md justify-between">
                 <div className="flex flex-col">
                   <span className="text-primary text-xl font-bold">500K+</span>
-                  <p className="text-sm">Interactions / mois</p>
+                  <p className="text-sm">Interactions / Mois</p>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-destructive text-xl font-bold">
                     50+
                   </span>
-                  <p className="text-sm">Marques actives</p>
+                  <p className="text-sm">Marques Actives</p>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-primary text-xl font-bold">x3.5</span>
-                  <p className="text-sm">ROI moyen</p>
+                  <p className="text-sm">ROI Moyen</p>
                 </div>
               </div>
 
@@ -105,8 +111,8 @@ function Hero() {
               </div>
 
               {/* Links */}
-              <div className="text-muted border-muted space-y-2 border-t pt-6 text-sm">
-                <p>Ils nous font confiance</p>
+              <div className="text-muted-foreground border-muted space-y-2 border-t pt-6 text-sm">
+                <p className="uppercase">Ils nous font confiance</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-1">
                   <span className="hover:text-foreground cursor-pointer transition-colors">
                     Maroc Telecom

@@ -1,6 +1,6 @@
-import SmoothScroll from './Components/animations/SmoothScroll';
-import Header from './Components/Header';
-import Hero from './Components/Hero';
+import SmoothScroll from './components/animations/SmoothScroll';
+import Header from './components/Header';
+import Hero from './components/Hero';
 
 function App() {
   return (

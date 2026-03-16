@@ -10,6 +10,7 @@
   --primary-strong: #0b6b3a;
   --primary-hover: #0b6b3a;
   --muted: #cbd5e1;
+  --muted-foreground: #64748b;
   --white: #ffffff;
   --destructive: #dc2626;
 }
@@ -22,6 +23,7 @@
   --color-primary-strong: var(--primary-strong);
   --color-primary-hover: var(--primary-hover);
   --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --color-white: var(--white);
   --color-destructive: var(--destructive);
 
