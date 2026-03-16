@@ -1,4 +1,5 @@
 import SmoothScroll from './components/animations/SmoothScroll';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import BackOffice from './components/sections/BackOffice';
 import Benefits from './components/sections/Benefits';
@@ -16,21 +17,23 @@ function App() {
     <SmoothScroll>
       <Header />
       <main>
+        {/* Page sections */}
         <Hero />
         <Features />
         <HowItWorks />
         <Benefits />
         <BackOffice />
         <Stats />
+
         <div className="to-muted/30 border-muted border-b bg-linear-to-br from-white from-30%">
           <PricingTable />
           <Catalog />
         </div>
+
         <SocialProof />
         <CTA />
-
-        <div className="h-dvh"></div>
       </main>
+      <Footer />
     </SmoothScroll>
   );
 }
