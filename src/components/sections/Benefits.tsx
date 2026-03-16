@@ -21,7 +21,7 @@ const features = [
 
 function Benefits() {
   return (
-    <Container className="relative py-24 text-center text-white">
+    <Container className="benefits relative py-24 text-center text-white">
       {/* Gradient background */}
       <div className="from-primary to-primary-strong absolute inset-0 -z-100 size-full bg-linear-to-r" />
 
@@ -34,7 +34,7 @@ function Benefits() {
       </p>
 
       {/* Cards Grid */}
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
         {features.map((feature, index) => (
           <div
             key={index}

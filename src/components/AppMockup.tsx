@@ -2,7 +2,7 @@ import {
   BadgeEuroIcon,
   BlocksIcon,
   GiftIcon,
-  ScanQrCodeIcon,
+  QrCodeIcon,
   UserIcon,
 } from 'lucide-react';
 import { cn } from '../lib/utils';
@@ -58,7 +58,7 @@ function AppMockup({ className }: Props) {
             <p className="text-xs">Collection</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-1">
-            <ScanQrCodeIcon className="bg-muted/50 size-6 rounded-md p-1" />
+            <QrCodeIcon className="bg-muted/50 size-6 rounded-md p-1" />
             <p className="text-xs">Scanner</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-1">
@@ -81,7 +81,7 @@ function AppMockup({ className }: Props) {
         </div>
       </div>
       <div className="bg-background absolute -top-2 right-4 flex gap-2 rounded-md p-4 shadow-2xl">
-        <ScanQrCodeIcon className="bg-primary/20 stroke-primary size-8 rounded-md stroke-2 p-2" />
+        <QrCodeIcon className="bg-primary/20 stroke-primary size-8 rounded-md stroke-2 p-2" />
         <div className="text-xs">
           <p className="font-bold">Scan QR Code</p>
           <p className="text-muted-foreground">Débloquer une carte</p>

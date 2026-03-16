@@ -41,7 +41,7 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <Container className="py-24 text-center">
+    <Container className="how-it-works py-24 text-center">
       {/* Header Section */}
       <h2 className="mb-4 text-3xl leading-tight font-bold capitalize">
         Un parcours client simple et engageant
@@ -51,7 +51,7 @@ function HowItWorks() {
       </p>
 
       {/* Grid Container */}
-      <div className="mt-12 grid grid-cols-2 gap-x-2 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
+      <div className="mt-16 grid grid-cols-2 gap-x-2 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
         {steps.map((step) => (
           <div
             key={step.id}
