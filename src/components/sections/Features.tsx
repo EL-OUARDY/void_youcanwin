@@ -64,7 +64,7 @@ function Features() {
             Le terrain de jeu digital de votre marque
           </h2>
 
-          <p className="text-muted-foreground mb-7 max-w-md text-sm leading-relaxed">
+          <p className="text-muted-foreground mb-7 max-w-md leading-relaxed">
             YouCanWin transforme vos produits en expériences interactives.
             Chaque achat devient une opportunité d'engagement avec vos
             consommateurs.
