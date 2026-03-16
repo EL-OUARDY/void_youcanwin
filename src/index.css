@@ -56,3 +56,24 @@
 body {
   @apply text-foreground bg-background font-poppins;
 }
+
+/* Custom scroll bar */
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--background);
+  border-radius: 0;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--background) var(--primary);
+  }
+}
