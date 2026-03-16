@@ -43,11 +43,11 @@ function Features() {
       <div className="grid grid-cols-1 items-center gap-24 md:grid-cols-2 md:gap-12">
         {/* Image */}
         <div className="grid justify-center md:justify-end lg:pr-12">
-          <div className="aspect-3/4 max-h-125 overflow-hidden rounded-2xl">
+          <div className="group aspect-3/4 max-h-125 overflow-hidden rounded-2xl">
             <img
               src="/assets/img/ball.webp"
               alt="Football on pitch"
-              className="size-full object-cover"
+              className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         </div>
