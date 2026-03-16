@@ -7,6 +7,7 @@ import Features from './components/sections/Features';
 import Hero from './components/sections/Hero';
 import HowItWorks from './components/sections/HowItWorks';
 import PricingTable from './components/sections/PricingTable';
+import SocialProof from './components/sections/SocialProof';
 import Stats from './components/sections/Stats';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <PricingTable />
           <Catalog />
         </div>
+        <SocialProof />
 
         <div className="h-dvh"></div>
       </main>
