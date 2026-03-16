@@ -36,7 +36,10 @@ const features = [
 
 function Features() {
   return (
-    <Container className="features py-24">
+    <Container className="features relative py-24">
+      {/* Gradient background */}
+      <div className="to-muted/20 absolute inset-0 -z-100 size-full bg-linear-to-br from-white" />
+
       <div className="grid grid-cols-1 items-center gap-24 md:grid-cols-2 md:gap-12">
         {/* Image */}
         <div className="grid justify-center md:justify-end lg:pr-12">
@@ -57,11 +60,11 @@ function Features() {
             Solution complète
           </Chip>
 
-          <h2 className="mb-4 text-3xl leading-tight font-bold capitalize">
+          <h2 className="mb-4 max-w-[24rem] text-3xl leading-tight font-bold capitalize">
             Le terrain de jeu digital de votre marque
           </h2>
 
-          <p className="text-muted-foreground mb-7 text-sm leading-relaxed">
+          <p className="text-muted-foreground mb-7 max-w-md text-sm leading-relaxed">
             YouCanWin transforme vos produits en expériences interactives.
             Chaque achat devient une opportunité d'engagement avec vos
             consommateurs.
