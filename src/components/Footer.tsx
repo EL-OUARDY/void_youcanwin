@@ -31,6 +31,7 @@ function Footer() {
                   <a
                     key={idx}
                     href="#"
+                    aria-label={APP_NAME}
                     className="hover:bg-muted/70 bg-muted/50 text-muted-foreground hover:text-foreground flex size-8 items-center justify-center rounded-lg transition-all"
                   >
                     <Icon className="size-4" />
@@ -113,8 +114,8 @@ function Footer() {
           </p>
           <p>
             Un service de{' '}
-            <span className="text-primary font-bold">Agency.Africa</span> —
-            games.agency.africa
+            <span className="text-primary-strong font-bold">Agency.Africa</span>{' '}
+            — games.agency.africa
           </p>
         </div>
 

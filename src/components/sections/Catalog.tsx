@@ -60,7 +60,7 @@ function Catalog() {
               />
               {item.badge && (
                 <span
-                  className={`absolute top-0 right-0 ${item.badgeColor} rounded-bl-xl px-3 py-1 text-[10px] font-bold text-white`}
+                  className={`absolute top-0 right-0 ${item.badgeColor} rounded-bl-xl px-4 py-1 text-sm! font-bold text-white`}
                 >
                   {item.badge}
                 </span>
