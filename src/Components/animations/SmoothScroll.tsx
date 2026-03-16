@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-function LenisScrollProvider({ children }: Props) {
+function SmoothScroll({ children }: Props) {
   const lenisRef = useRef<LenisRef | null>(null);
 
   // GSAP integration
@@ -27,4 +27,4 @@ function LenisScrollProvider({ children }: Props) {
   );
 }
 
-export default LenisScrollProvider;
+export default SmoothScroll;
