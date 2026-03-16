@@ -68,7 +68,7 @@ const plans = [
 
 function PricingTable() {
   return (
-    <Container className="how-it-works py-24 text-center">
+    <Container className="pricing-table py-24 text-center">
       {/* Header Section */}
       <h2 className="mb-4 text-3xl leading-tight font-bold capitalize">
         Des formules adaptées à votre échelle

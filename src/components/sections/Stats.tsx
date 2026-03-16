@@ -37,7 +37,7 @@ const stats = [
 
 function Stats() {
   return (
-    <Container className="backoffice relative">
+    <Container className="stats relative">
       <div className="border-muted grid grid-cols-2 gap-x-4 gap-y-10 border-b py-16 md:grid-cols-3 lg:grid-cols-5">
         {stats.map((stat, index) => (
           <div
