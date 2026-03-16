@@ -1,5 +1,6 @@
 import { TrophyIcon } from 'lucide-react';
 import { APP_NAME } from '../lib/constants';
+import Chip from './ui/chip';
 
 function Logo() {
   return (
@@ -15,6 +16,8 @@ function Logo() {
         can
         <span className="text-primary">win</span>
       </span>
+
+      <Chip>GAMES</Chip>
     </a>
   );
 }
