@@ -63,7 +63,7 @@ function HowItWorks() {
             </div>
 
             {/* Icon Card */}
-            <div className="bg-background mb-6 flex size-16 items-center justify-center rounded-2xl border border-current shadow-sm">
+            <div className="bg-background mb-6 flex size-16 items-center justify-center rounded-2xl border border-current/40 shadow-sm">
               <span className="text-3xl transition-transform duration-300 group-hover:scale-110">
                 {step.icon}
               </span>
