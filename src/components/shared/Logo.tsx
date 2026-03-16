@@ -1,12 +1,17 @@
 import { TrophyIcon } from 'lucide-react';
 import { APP_NAME } from '../../lib/constants';
 import Chip from '../ui/chip';
+import { cn } from '../../lib/utils';
 
-function Logo() {
+interface Props {
+  className?: string;
+}
+
+function Logo({ className }: Props) {
   return (
     <a
       href="#"
-      className="flex items-center gap-2 text-xl font-bold"
+      className={cn('flex items-center gap-2 text-xl font-bold', className)}
       aria-label={APP_NAME}
     >
       <TrophyIcon className="corner-squircle from-primary to-primary-strong size-8 rounded-xl bg-linear-to-r stroke-white stroke-2 p-2" />
